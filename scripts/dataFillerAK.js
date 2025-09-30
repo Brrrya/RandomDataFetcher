@@ -33,12 +33,6 @@ export function fillDataAK(data){
         let docNumberInput = element.querySelector('input[data-id="avia.booking.passenger_document-number-native_input"]');
         setGenderByText(data[passCategory][passCounter[passCategory]].genderCodeText, iteration, element);
 
-        // let genderSelect = element.querySelectorAll('input[data-id="avia.booking.passenger_gender-native_select"]');
-
-        // element.querySelector('input[data-id="avia.booking.passenger_gender-input-native_input"]').click();
-        // element.querySelector('option[value="M"]').click();
-
-
         lastNameInput.value = data[passCategory][passCounter[passCategory]].lastName;
         lastNameInput.dispatchEvent(new Event("input", { bubbles: true }));
 
@@ -53,11 +47,6 @@ export function fillDataAK(data){
 
         docNumberInput.value = data[passCategory][passCounter[passCategory]].documentNumber;
         docNumberInput.dispatchEvent(new Event("input", { bubbles: true }));
-
-        // genderSelect.value = data[passCategory][passCounter[passCategory]].genderCodeText;
-        // genderSelect.dispatchEvent(new Event("input", { bubbles: true }));
-        // genderSelect.dispatchEvent(new Event("change", { bubbles: true }));
-
     }
 
     console.log("Executed data by Random Data Fetcher")
@@ -123,10 +112,9 @@ export function fillDataAK(data){
                 break;
             }
         }
-
         // 4. закрываем меню (если нужно)
         simulateClick(input);
     }
- // Конец дрочи с гендером -----------------------------------------------
+    // Конец дрочи с гендером -----------------------------------------------
 
 }

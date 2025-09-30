@@ -1,14 +1,14 @@
 {
   "manifest_version": 3,
   "name": "Random Data Fetcher",
-  "version": "1.0",
+  "version": "1.1",
   "description": "An extension for generating random passenger data for a website aviakassa.com",
   "action": {
     "default_popup": "hello.html",
     "default_title": "Random Data",
     "default_icon": "icon.png"
   },
-  "permissions": ["tabs", "scripting", "storage", "activeTab"],
+  "permissions": ["tabs", "scripting", "activeTab"],
   "background": {
     "service_worker": "background.js",
     "type": "module"
