@@ -123,7 +123,7 @@ export class RandomPersonDataManager {
         minDate.setMonth(minDate.getMonth() - 1); // чтобы наверочку не в притык
         minDate.setFullYear(minDate.getFullYear() - minYearsOld);
         let maxDate = new Date();
-        maxDate.setMonth(maxDate.getMonth() - 1); // чтобы наверочку не в притык
+        maxDate.setMonth(maxDate.getMonth() + 1); // чтобы наверочку не в притык
         maxDate.setFullYear(maxDate.getFullYear() - maxYearsOld);
 
         // время в миллисекундах
